@@ -1,0 +1,153 @@
+:root {
+    --theme-color: #21C777;
+    --theme-color-hover: #18a05e;
+}
+
+* {
+    font-family: 'Jost', sans-serif;
+}
+
+::selection {
+    color: #000000;
+    background: #ffffff;
+  }
+
+img {
+    width: 100%;
+    border-radius: 4px;
+    margin: 12px 0;
+}
+
+mark {
+    background-color: #cccccc;
+    color: #000000;
+    /* border: 1px solid #ffffff; */
+    padding: 0px 5px;
+    border-radius: 2px;
+    font-weight: 400;
+}
+
+h1 {
+    font-weight: 500;
+} h2 {
+    font-weight: 500;
+} h3 {
+    font-weight: 400;
+} 
+
+p {
+    font-weight: 300;
+    text-align: justify;
+    line-height: 1.8;
+    letter-spacing: 0px;
+    color: #bbbbbb;
+}
+
+a {
+    font-weight: 300;
+    text-decoration: none;
+    color: #9b9b9b;
+    transition: all 0.5s;
+} a:hover {
+    color: white;
+} .bdudr {
+    font-style: italic;
+    color: #d6d6d6;
+    border-bottom: 1px dotted #525252;
+} .bdudr:hover {
+    color: #ffffff;
+    border-bottom: 1px solid #e5ff00;
+}
+
+.section-margin {
+    height: 15vh;
+    width: 1px;
+}
+
+.line-margin {
+    height: 8px;
+    width: 0;
+}
+
+
+
+
+.icon {
+    height: 24px;
+    width: 24px;
+    filter: brightness(0.6);
+    transition: all 0.3s;
+} .icon:hover {
+    filter: brightness(1.0);
+    transform: scale(1.2);
+}
+
+/* ----------------------- Hover to display Div ----------------------- */
+/* .hidden {
+    z-index: -1;
+    position: fixed;
+    top: 30vh;
+    left: 10vw;
+    opacity: 0;
+    transition: all 0.5s;
+} .hidden .hidden-img {
+    width: 30vw;
+    border-radius: 6px;
+}
+  .hover-to-display:hover + .hidden {
+    opacity: 1;
+  } */
+
+/* --------------------- Expand Button ---------------------- */
+.expandable {
+    margin: 0px 0 0 0;
+    padding: 0;
+}
+
+.accordion {
+    padding: 14px 0 14px 2.5vw;
+    background-color: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.3s;
+    border-left: 1px solid #858585;
+  } .accordion h3, p {
+      margin: 2px 0;
+  }
+  
+  .active, .accordion:hover {
+    background-color:  transparent; /*Active*/
+    color: #ffffff;
+    border-left: 5px solid #ffffff;
+  }
+  
+  .accordion::before {
+    position: relative;
+    height: 0;
+    content: '';
+    color: #ffffff; /*The icon*/
+    font-weight: bold;
+    float: right;
+    top: -8px;
+    right: 0px;
+    font-size: 32px;
+    color: #ffffff;
+  }
+  
+  .active::before {
+    content: "\2022";
+  }
+  
+  .panel {
+    padding: 0 0 0 calc(2.5vw + 4px);
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+  } .panel p {
+      margin: 8px 0 4px 0;
+  }
